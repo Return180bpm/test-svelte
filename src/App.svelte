@@ -12,26 +12,26 @@
 
 <ul>
     <li>
-        <span on:click={collapse_top}>Click me</span>
+        <span on:click={collapse_top}>0.1 - Click me</span>
         {#if visible}
             <ul transition:slide class="buggy-height">
                 <li>
-                    <span on:click={collapse_top2}>Click me 2</span>
+                    <span on:click={collapse_top2}>1.1 - Click me 2</span>
                     {#if visible_2}
                         <ul transition:slide|local>
-                            <li>Menu inner inner 1</li>
-                            <li>Menu inner inner 2</li>
-                            <li>Menu inner inner 3</li>
+                            <li>2.1</li>
+                            <li>2.1</li>
+                            <li>2.1</li>
                         </ul>
                     {/if}
                 </li>
-                <li>Menu item inner 2</li>
-                <li>Menu item inner 3</li>
+                <li>1.2</li>
+                <li>1.3</li>
             </ul>
         {/if}
     </li>
-    <li>Menu item 2</li>
-    <li>Menu item 3</li>
+    <li>0.2</li>
+    <li>0.3</li>
 </ul>
 
 <style>
